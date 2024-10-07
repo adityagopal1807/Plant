@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Plant Care Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to the Virtual Plant Care Assistant</h1>
+        <div id="plant-area">
+            <h2>Select a Plant</h2>
+            <select id="plant-select">
+                <option value="succulent">Succulent</option>
+                <option value="tropical">Tropical Plant</option>
+                <option value="flower">Flower</option>
+            </select>
+            <button id="start-button">Start Caring</button>
+        </div>
+
+        <div id="plant-container" style="display:none;">
+            <h2>Your Plant</h2>
+            <div id="plant"></div>
+            <div id="controls">
+                <button id="water-button">Water Plant</button>
+                <input type="range" id="sunlight-slider" min="0" max="100" value="50">
+                <label for="sunlight-slider">Sunlight Level</label>
+            </div>
+            <div id="feedback"></div>
+            <div id="growth-dashboard">
+                <h3>Plant Growth Dashboard</h3>
+                <p id="growth-status"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>We are passionate about plants and want to help you learn how to care for them through this interactive app.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Email: info@plantcareassistant.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
